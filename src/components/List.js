@@ -7,7 +7,7 @@ class List extends Component {
   }
 
   render() {
-    const { notes } = this.props;
+    const { notes, getNote } = this.props;
 
     const cards = notes.map((note, index) => {
       return (
@@ -15,6 +15,7 @@ class List extends Component {
           key={index}
           index={index}
           note={note}
+          getNote={getNote}
         />
       );
     });

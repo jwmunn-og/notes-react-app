@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class NoteCard extends Component {
   render() {
-    const { note } = this.props;
+    const { note, getNote } = this.props;
     return(
       <div className="note-card-container">
         <div className="note-card-title">
@@ -14,7 +14,7 @@ class NoteCard extends Component {
         <span className="note-card-delete">
           <i className="material-icons">close</i>
         </span>
-        <span className="note-card-edit">
+        <span className="note-card-edit" onClick={() => getNote()}>
           <i className="material-icons">mode_edit</i>
         </span>
       </div>
