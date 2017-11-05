@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import List from './components/List';
 import Note from './components/Note';
 import axios from 'axios';
+import urlFor from './helpers/urlFor';
 import './App.css';
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
   }
 
   getNotes = () => {
-    axios.get('https://notes-rails-api.herokuapp.com/')
+    axios.get(urlFor('notes'))
     .then((res) => console.log(res.data) )
     .catch((err) => console.log(err.response.data) );
   }
