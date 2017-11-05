@@ -7,7 +7,7 @@ class Note extends Component {
       title: this.title.value,
       content: this.content.value
     };
-    console.log(formData);
+    this.props.submitNote(formData);
   }
 
   render() {
