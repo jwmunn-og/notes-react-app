@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Nav extends React.Component {
+class Nav extends Component {
   render() {
     const { toggleNote, showNote } = this.props;
     
