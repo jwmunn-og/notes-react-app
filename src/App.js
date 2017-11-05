@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from './components/Nav';
 import List from './components/List';
 import Note from './components/Note';
+import axios from 'axios';
 import './App.css';
 
 class App extends Component {
@@ -18,13 +19,19 @@ class App extends Component {
     })
   }
 
+  getNotes = () => {
+    axios.get('https://notes-rails-api.herokuapp.com/')
+    .then((res) => console.log(res.data) )
+    .catch((err) => console.log(err.response.data) );
+  }
+
   render() {
     const { showNote } = this.state;
 
     return (
       <div className="App">
         <Nav toggleNote={this.toggleNote} showNote={showNote} />
-        { showNote ? <Note /> : <List /> }
+        { showNote ? <Note /> : <List getNotes={this.getNotes} /> }
       </div>
     );
   }
