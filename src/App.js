@@ -49,6 +49,13 @@ class App extends Component {
     .catch((err) => console.log(err.response.data) );
   }
 
+  deleteNote = (id) => {
+    const newNotesState = this.state.notes.filter((note) => note.id !== id );
+    axios.delete(urlFor(`notes/${id}`) )
+    .then((res) => this.setState({ notes: newNotesState }) )
+    .catch((err) => console.log(err.response.data) );
+  }
+
   render() {
     const { showNote, notes, note } = this.state;
 
@@ -66,6 +73,7 @@ class App extends Component {
               getNotes={this.getNotes}
               notes={notes}
               getNote={this.getNote}
+              deleteNote={this.deleteNote}
             /> }
       </div>
     );
