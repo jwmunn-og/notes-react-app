@@ -69,25 +69,29 @@ class Note extends Component {
     const { note, closeTagForm } = this.props;
     return(
       <div className="note-container">
+        <h2>Edit This Note</h2>
         <form
           className="note-form"
           onSubmit={(e) => this.onSubmit(e)}
           onClick={() => closeTagForm()}
         >
-          <input
-            className="note-title-input"
-            type="text"
-            placeholder="Note Title..."
-            defaultValue={note.title}
-            ref={(input) => this.title = input}
-          />
-        
-          <textarea
-            className="note-textarea"
-            placeholder="Type Here..."
-            defaultValue={note.content}
-            ref={(input) => this.content = input}
-          />
+          <div className="note-title">
+            <input
+              className="note-title-input"
+              type="text"
+              placeholder="Note Title..."
+              defaultValue={note.title}
+              ref={(input) => this.title = input}
+            />
+          </div>
+          <div className="note-textarea-container">
+            <textarea
+              className="note-textarea"
+              placeholder="Type Here..."
+              defaultValue={note.content}
+              ref={(input) => this.content = input}
+            />
+          </div>
           <input className="note-button" type="submit" value="Submit" />
         </form>
         <div className="tag-container">
