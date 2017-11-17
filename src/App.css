@@ -120,7 +120,7 @@ body {
 @media only screen and (max-width: 500px) {
   .nav-container {
     height: 60px;
-    background-color: rgb(228, 91, 91);
+    background-color: #3498db;
     box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
     padding-left: 10px;
     padding-right: 10px;
@@ -133,9 +133,6 @@ body {
     font-size: 2em;
     float: left;
     cursor: pointer;
-    animation-name: move;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
     padding-top: 5px;
   }
 
@@ -144,7 +141,7 @@ body {
     height: 30px;
     width: 80px;
     background: white;
-    color: rgb(228, 91, 91);
+    color: #3498db;
     float: right;
     font-size: 1em;
     margin-top: 12px;
@@ -570,9 +567,9 @@ body {
     border: none;
     font-size: 1.5em;
     text-align: center;
-    border-bottom: 2px solid rgb(228, 91, 91);
+    border-bottom: 2px solid #3498db;
     font-family: 'Assistant', sans-serif;
-    background-color: rgb(228, 91, 91);
+    background-color: #3498db;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -601,7 +598,7 @@ body {
     font-family: 'Assistant', sans-serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background: #3498db;
     color: white;
     float: right;
     font-size: 1.5em;
@@ -745,10 +742,10 @@ body {
     border: none;
     font-size: 1.2em;
     text-align: center;
-    border-bottom: 2px solid rgb(228, 91, 91);
+    border-bottom: 2px solid #3498db;
     font-family: 'Assistant', sans-serif;
     width: 290px;
-    background-color: rgb(228, 91, 91);
+    background-color: #3498db;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -777,7 +774,7 @@ body {
     font-family: 'Assistant', sans-serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background: #3498db;
     color: white;
     float: right;
     font-size: 1.5em;
