@@ -23,8 +23,8 @@ You can see a running version of the application at
 * Communicates with my custom Rails API to store and update notes: [View the API Repo](https://github.com/jwmunn/notes-rails-api)
 
 ## Screenshots
-![Notes Homepage](https://raw.githubusercontent.com/jwmunn/notes-react-app/notes-index.png "Notes Homepage")
-![Individual Note](https://raw.githubusercontent.com/jwmunn/notes-react-app/notes-show.png "Individual Note")
+![Notes Homepage](/notes-index.png "Notes Homepage")
+![Individual Note](/notes-show.png "Individual Note")
 
 ## Installation
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
