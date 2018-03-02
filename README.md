@@ -4,12 +4,6 @@ Notes lets you create, edit and delete notes. You may also add or delete tags fo
 
 *Technical description: A Single-Page Application making Promise based HTTP requests built with ReactJS and a Ruby on Rails API*
 
-## Demo
-You can see a running version of the application at
-[https://notes-react-app.herokuapp.com/][demo].
-
-[demo]: https://notes-react-app.herokuapp.com/
-
 ## Features
 
 * Single-Page Application using ReactJS.
@@ -21,6 +15,12 @@ You can see a running version of the application at
 * Makes Promise based HTTP requests using [Axios](https://github.com/axios/axios)
 
 * Communicates with my custom Rails API to store and update notes: [View the API Repo](https://github.com/jwmunn/notes-rails-api)
+
+## Demo
+You can see a running version of the application at
+[https://notes-react-app.herokuapp.com/][demo].
+
+[demo]: https://notes-react-app.herokuapp.com/
 
 ## Screenshots
 ![Notes Homepage](/notes-index.png "Notes Homepage")
